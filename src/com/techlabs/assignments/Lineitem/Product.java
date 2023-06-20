@@ -38,8 +38,8 @@ public class Product {
 	public void setDiscountPercent(double discountPercent) {
 		this.discountPercent = discountPercent;
 	}
-	public void calculateDiscountPrice() {
-		
+	public double calculateDiscountPrice() {
+		return price - (price/discountPercent);
 	}
 	
 }
